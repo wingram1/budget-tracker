@@ -18,11 +18,19 @@ app.use(express.static("public"));
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 // routes
 app.use(require("./routes/api.js"));
+
+app.use((err, req, res, next) => {
+  if (res.headersSent) {
+    return next(err);
+  }
+  res.status(500);
+  res.json({ error: err });
+});
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
