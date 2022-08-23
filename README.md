@@ -4,7 +4,7 @@
 
 ## About the Project
 
-Welcome to my Social Network API! This application is a simple-but-effective framework for a social network application. Using the API, users can be created and managed, as well as post thoughts and react to other thoughts.
+Welcome to my Budget Tracker! This application is a simple-but-effective framework for a social network application. Using the API, users can be created and managed, as well as post thoughts and react to other thoughts.
 
 [Click here to check out the deployed application!](https://shielded-stream-03290.herokuapp.com/)
 
